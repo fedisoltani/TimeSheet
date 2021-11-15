@@ -2010,3 +2010,20 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2021-11-15 20:37:29.990  INFO 9108 --- [main] com.tp.services.UserServiceImpl          : Updating user object
 2021-11-15 20:37:30.000  INFO 9108 --- [main] com.tp.services.UserServiceImpl          : Deleting user object
 2021-11-15 20:37:30.016  INFO 9108 --- [main] com.tp.services.UserServiceImpl          : Retreiving user object
+2021-11-15 21:38:39.512  INFO 22040 --- [main] com.tp.services.UserServiceImplTest      : Starting UserServiceImplTest using Java 1.8.0_60 on Fedi with PID 22040 (started by solta in C:\Users\solta\Desktop\Timesheet\TimeSheet)
+2021-11-15 21:38:39.512  INFO 22040 --- [main] com.tp.services.UserServiceImplTest      : No active profile set, falling back to default profiles: default
+2021-11-15 21:38:40.485  INFO 22040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 21:38:40.567  INFO 22040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 21:38:40.740  INFO 22040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 21:38:41.318  INFO 22040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-11-15 21:38:42.692  INFO 22040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 21:38:43.132  WARN 22040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-15 21:38:43.543  INFO 22040 --- [main] com.tp.services.UserServiceImplTest      : Started UserServiceImplTest in 4.244 seconds (JVM running for 5.031)
+2021-11-15 21:38:43.765  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : []
+2021-11-15 21:38:43.779  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Saving user object
+2021-11-15 21:38:43.810  INFO 22040 --- [main] com.tp.services.UserServiceImplTest      : User [id=1, firstName=Fedi, lastName=Soltani, dateNaissance=3897-05-07, role=INGENIEUR]
+2021-11-15 21:38:43.810  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Retreiving user object
+2021-11-15 21:38:43.825  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Retreiving user object
+2021-11-15 21:38:43.825  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Updating user object
+2021-11-15 21:38:43.841  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Deleting user object
+2021-11-15 21:38:43.857  INFO 22040 --- [main] com.tp.services.UserServiceImpl          : Retreiving user object
