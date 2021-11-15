@@ -25,7 +25,7 @@ class UserServiceImplTest {
 	@Autowired
 	IUserService us;
 	
-	private static User testCaseUser = new User("Firas", "Soltani", new Date(1996, 9, 22), Role.INGENIEUR);;
+	private static User testCaseUser = new User("Fedi", "Soltani", new Date(1997, 4, 07), Role.INGENIEUR);;
 
 	@Test
 	@Order(1)
