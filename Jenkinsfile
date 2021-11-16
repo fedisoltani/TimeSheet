@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         // Run Maven on a Unix agent.
-        bat "mvn -Dmaven.test.failure.ignore=true clean package"
+        call "mvn -Dmaven.test.failure.ignore=true clean package"
       }
     }
 
@@ -13,8 +13,8 @@ pipeline {
       steps {
         script {
           try {
-            bat 'mvn test'
-            bat 'mvn sonar:sonar'
+            call 'mvn test'
+            call 'mvn sonar:sonar'
           } catch (Exception e) {
             error('Test failed' + e)
           }
@@ -26,8 +26,8 @@ pipeline {
       steps {
         script {
           try {
-            bat "mvn clean"
-            bat "mvn jar:jar deploy:deploy -Dusername=admin -Dpassword=Youssefkhadijafedi.1997*13"
+            call "mvn clean"
+            call "mvn jar:jar deploy:deploy -Dusername=admin -Dpassword=Youssefkhadijafedi.1997*13"
           } catch (Exception e) {
             error("Packaging failed" + e)
           }
@@ -36,7 +36,7 @@ pipeline {
     }
     stage('Docker') {
         steps {
-            bat 'docker build -t timesheet:v1 .'
+            call 'docker build -t timesheet:v1 .'
         }
     }
   }
