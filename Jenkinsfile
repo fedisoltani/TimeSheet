@@ -27,7 +27,7 @@ pipeline {
         script {
           try {
             sh "mvn clean"
-            sh "mvn jar:jar deploy:deploy -Dusername=admin -Dpassword=Goldina100g"
+            sh "mvn jar:jar deploy:deploy -Dusername=admin -Dpassword=admin123456789"
           } catch (Exception e) {
             error("Packaging failed" + e)
           }
@@ -36,8 +36,8 @@ pipeline {
     }
     stage('Docker') {
         steps {
-            sh 'docker build -t yosriksonti/timesheet:v1 .'
-            sh 'docker push yosriksonti/timesheet:v1'
+            sh 'docker build -t fedisoltani/timesheet:v1 .'
+            sh 'docker push fedisoltani/timesheet:v1'
 
         }
     }
