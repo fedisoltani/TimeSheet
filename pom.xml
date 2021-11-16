@@ -61,7 +61,7 @@
 		<repository>
 			<id>maven-releases</id>
 			<name>Validation devOPS</name>
-			<url>http://localhost:8081/repository/maven-releases</url>
+			<url>http://host.docker.internal:8081/repository/maven-releases</url>
 		</repository>
 	</distributionManagement>
 
